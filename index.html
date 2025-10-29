@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>dev.umaywant2.com | Dev Site</title>
+  <title>umaywant2_com | Dev Site</title>
 
   <!-- 🔍 SEO & Social Meta -->
   <meta name="description" content="Dev site for triadicframeworks.org — mythmatical scrolls, resonance protocols, and validator-grade clarity." />
@@ -11,7 +11,7 @@
   <meta name="author" content="Nawder Loswin" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="dev.umaywant2.com | Dev Site" />
+  <meta property="og:title" content="umaywant2_com | Dev Site" />
   <meta property="og:description" content="Dev site for triadicframeworks.org — mythmatical scrolls, resonance protocols, and validator-grade clarity." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dev.umaywant2.com" />
@@ -43,10 +43,20 @@
       font-size: 1.2rem;
       opacity: 0.85;
     }
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1; /* pushes footer down */
+    }
     footer {
-      margin-top: auto;
-      padding: 2rem 1rem;
-      background: rgba(0,0,0,0.3);
+      margin-top: 3rem;   /* pushes it down from whatever comes before */
+      padding: 2rem 1rem; /* keeps the inner spacing */
+      background: rgba(0,0,0,0.4);
+      text-align: center;
     }
     footer nav a {
       margin: 0 1rem;
