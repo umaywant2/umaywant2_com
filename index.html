@@ -66,12 +66,9 @@
   color: #fff;                             /* text color */
 }
     #copilot-widget img { flex-shrink: 0; }
-    #copilot-widget input {
-      flex: 1;
-      padding: 0.5rem;
-      border: 1px solid #aaa;
-      border-radius: 4px;
-    }
+#copilot-widget input::placeholder {
+  color: rgba(255,255,255,0.7);            /* softer placeholder */
+}
     #copilot-widget button {
   padding: 0.5rem 0.8rem;
   border: 1px solid rgba(255,255,255,0.6);
